@@ -41,6 +41,7 @@ nav h2 a {
   text-decoration: none;
   color: #222;
   transition: color 0.2s ease;
+  white-space: nowrap;
 }
 
 nav h2 a:hover {
@@ -759,4 +760,32 @@ main>h2 {
 
 .cart-product-title:hover {
   color: inherit;
+}
+
+nav {
+  flex-wrap: nowrap;
+  gap: 14px;
+}
+
+nav h2 {
+  margin-right: 5px;
+  flex-shrink: 0;
+}
+
+nav h2 a {
+  font-size: 30px;
+  white-space: nowrap;
+}
+
+nav>div {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 5px;
+  flex-shrink: 1;
+}
+
+nav>div a {
+  padding: 7px 9px;
+  font-size: 13px;
+  white-space: nowrap;
 }
